@@ -92,78 +92,81 @@
         </section>
         <!-- cuarta sección "MIS PROYECTOS" "projects" -->
         <section class="section projects" id="projects">
-            <article class="project-text">
-                <h2 class="project-title">Mis proyectos</h2>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate expedita ipsa optio. Fuga, voluptate.</p>
-            </article>
-            <section class="project-grid">
-                <a href="#" >
-                    <figure class="project-card">
+            <section class="project-title">
+                <h2>Mis proyectos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate
+                    expedita ipsa optio. Fuga, voluptate.</p>
+            </section>
+            <section class="project-cards">
+                <a href="https://github.com/AnaCPetrasso/Portafolio-ADA">
+                    <figure>
                         <img src="./imagenes/undraw_portfolio_re_qwm5.svg">
                         <figcaption>Portfolio</figcaption>
                     </figure>
                 </a>
-                <a href="#" >
-                    <figure class="project-card">
+                <a href="#">
+                    <figure>
                         <img src="./imagenes/undraw_mobile_user_re_xta4.svg">
                         <figcaption>Generador de memes</figcaption>
                     </figure>
                 </a>
-                <a href="#" >
-                    <figure class="project-card">
+                <a href="#">
+                    <figure>
                         <img src="./imagenes/undraw_old_day_-6-x25.svg">
                         <figcaption>Match 3</figcaption>
                     </figure>
                 </a>
-                <a href="#" >
-                    <figure class="project-card">
+                <a href="#">
+                    <figure>
                         <img src="./imagenes/undraw_vault_re_s4my.svg">
                         <figcaption>Controlador de gastos</figcaption>
                     </figure>
                 </a>
-                <a href="#" >
-                    <figure class="project-card">
+                <a href="#">
+                    <figure>
                         <img src="./imagenes/undraw_schedule_re_2vro.svg">
                         <figcaption>Administrador de reuniones</figcaption>
                     </figure>
                 </a>
-                <a href="#" >
-                    <figure class="project-card">
+                <a href="#">
+                    <figure>
                         <img src="./imagenes/undraw_to_do_list_re_9nt7.svg">
                         <figcaption>ToDo app</figcaption>
                     </figure>
                 </a>
-                <a href="#" >
-                    <figure class="project-card">
+                <a href="#">
+                    <figure>
                         <img src="./imagenes/undraw_movie_night_re_9umk.svg">
                         <figcaption>Buscador de películas</figcaption>
                     </figure>
                 </a>
             </section>
+
+
         </section>
         <!-- quinta sección "CONTACTO" "contact" -->
         <section class="section contact" id="contact">
-            <div class="box">
+            <section class="contact_main-box">
                 <section class="contact-box">
-                    <h2 class="title">Contactame</h2>
-                    <p class="text">Podes contactarme por cualquiera de mis redes sociales
+                    <h2>Contactame</h2>
+                    <p>Podes contactarme por cualquiera de mis redes sociales
                     </p>
-                    <ul class="social">
-                        <li class="social-item">
+                    <ul>
+                        <li>
                             <a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i>@caritopetra
                             </a>
                         </li>
-                        <li class="social-item">
+                        <li>
                             <a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i
                                     class="fa-brands fa-linkedin-in"></i>ana-carolina-petrasso
                             </a>
                         </li>
-                        <li class="social-item">
+                        <li>
                             <a href="https://github.com/AnaCPetrasso"><i
                                     class="fa-brands fa-github-alt"></i>@AnaCPetrasso
                             </a>
                         </li>
-                        <li class="social-item">
+                        <li>
                             <a href="mailto:carolina15petrasso@gmail.com"><i
                                     class="fa-solid fa-envelope"></i>carolina15petrasso@gmail.com
                             </a>
@@ -173,12 +176,16 @@
                 <section class="writeme-box">
                     <h2 class="title">Escribime</h2>
                     <form action="guardar_datos.html" method="post" enctype="application/x-www-form-urlencoded">
-                        <fieldset>
-                            <label for="nombre">Nombre*</label>
-                            <input type="text" name="nombre" placeholder="p.ej.: Ada" required>
-                            <label for="apellido">Apellido*</label>
-                            <input type="text" name="apellido" placeholder="p.ej.: Lovelace" required>
-                        </fieldset>
+                        <section class="form-name">
+                            <section class="name-column">
+                                <label for="nombre">Nombre*</label>
+                                <input type="text" name="nombre" placeholder="p.ej.: Ada" required>
+                            </section>
+                            <section class="name-column">
+                                <label for="apellido">Apellido*</label>
+                                <input type="text" name="apellido" placeholder="p.ej.: Lovelace" required>
+                            </section>
+                        </section>
                         <label for="email">Email*</label>
                         <input type="email" name="email" placeholder="p.ej.: ada.lovelace@gmail.com" required>
                         <label for="mensaje">Mensaje*</label>
@@ -186,8 +193,8 @@
                         <button type="submit">Enviar</button>
                     </form>
                 </section>
-            </div>
-        </section> 
+            </section>
+        </section>
     </main>
     <!--  footer -->
     <footer>
@@ -209,7 +216,7 @@
         <p class="footer-tex">
             Hecho con &#128151 por Caro Petrasso
         </p>
-    </footer> 
+    </footer>
 </body>
 
 </html>
