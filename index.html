@@ -24,26 +24,26 @@
 <body>
     <!--  header -->
     <header>
-        <nav class="header-nav-bar">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#about" class="nav-link">HOLA</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">PROYECTOS</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link contact">CONTACTO</a></li>
+        <nav class="header__nav">
+            <ul class="header__nav_menu">
+                <li class="nav__menu__item"><a href="#about" >HOLA</a></li>
+                <li class="nav__menu__item"><a href="#skills" >CONOCIMIENTOS</a></li>
+                <li class="nav__menu__item"><a href="#projects" >PROYECTOS</a></li>
+                <li class="nav__menu__item"><a href="#contact" class="btn">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <!-- main -->
     <main>
         <!-- primera sección "HOLA" "about"-->
-        <section class="section about" id="about">
-            <article class="about-article">
-                <h3 class="about-greeting">¡Hola! Soy</h3>
-                <h1 class="about-name">Ana Carolina Petrasso</h1>
-                <p class="about-description"> Desarrolladora Frontend, profesora de química y futura ingeniera</p>
-                <a href="#projects" class="button">Lo que hago</a>
+        <section class="about" id="about">
+            <article class="about__art">
+                <h3 class="about__art__greeting">¡Hola! Soy</h3>
+                <h1 class="about__art__name">Ana Carolina Petrasso</h1>
+                <p class="about__art__description"> Desarrolladora Frontend, profesora de química y futura ingeniera</p>
+                <a href="#projects" class="btn">Lo que hago</a>
             </article>
-            <img src="./imagenes/undraw_programmer_re_owql.svg" alt="mujer programando" class="about-img">
+            <img src="./imagenes/undraw_programmer_re_owql.svg" alt="mujer programando" >
         </section>
         <!-- segunda sección "CONOCIMIENTOS"  "skills"-->
         <section class="section skills" id="skills">
@@ -79,7 +79,7 @@
                 </figure>
             </section>
         </section>
-        <!-- tercera sección "quote" -->
+        <!-- tercera sección "quote"-->
         <section class="section quote" id="quote">
             <i class="fa-solid fa-quote-right"></i>
             <blockquote cite="https://www.exitoysuperacionpersonal.com/frases-de-ada-lovelace/">
@@ -90,7 +90,7 @@
                 <h4>Marie Curie</h4>
             </blockquote>
         </section>
-        <!-- cuarta sección "MIS PROYECTOS" "projects" -->
+        <!-- cuarta sección "MIS PROYECTOS" "projects"-->
         <section class="section projects" id="projects">
             <section class="project-title">
                 <h2>Mis proyectos</h2>
@@ -141,8 +141,6 @@
                     </figure>
                 </a>
             </section>
-
-
         </section>
         <!-- quinta sección "CONTACTO" "contact" -->
         <section class="section contact" id="contact">
@@ -175,7 +173,7 @@
                 </section>
                 <section class="writeme-box">
                     <h2 class="title">Escribime</h2>
-                    <form action="guardar_datos.html" method="post" enctype="application/x-www-form-urlencoded">
+                    <form action="https://formsubmit.co/carolina15petrasso@gmail.com" method="POST" >
                         <section class="form-name">
                             <section class="name-column">
                                 <label for="nombre">Nombre*</label>
@@ -190,7 +188,7 @@
                         <input type="email" name="email" placeholder="p.ej.: ada.lovelace@gmail.com" required>
                         <label for="mensaje">Mensaje*</label>
                         <textarea name="mensaje" cols="50" rows="10" placeholder="Escriba un mensaje aqui"></textarea>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn">Enviar</button>
                     </form>
                 </section>
             </section>
