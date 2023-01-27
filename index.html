@@ -1,251 +1,237 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portafolio personal. Proyecto final del módulo 1 de desarrollo Frontend en AdaITW"
-    />
-    <meta name="author" content="Ana Carolina Petrasso" />
-    <!-- lugar para link a otros documentos o hojas de estilos -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- lugar para link a fonts y iconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/8f1dad4900.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Portafolio Petrasso</title>
-  </head>
 
-  <body>
-    <!--  header -->
-    <header>
-      <nav class="header__nav">
-        <ul class="header__nav__ul">
-          <li class="header__nav__ul__item"><a href="#about">HOLA</a></li>
-          <li class="header__nav__ul__item">
-            <a href="#skills">CONOCIMIENTOS</a>
-          </li>
-          <li class="header__nav__ul__item">
-            <a href="#projects">PROYECTOS</a>
-          </li>
-          <li class="header__nav__ul__item--btn">
-            <a href="#contact" class="btn">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- main -->
-    <main>
-      <!-- primera sección "HOLA" "about"-->
-      <section class="about" id="about">
-        <article class="about__text">
-          <h3 class="about__text__greeting">¡Hola! Soy</h3>
-          <h1 class="about__text__name">Ana Carolina Petrasso</h1>
-          <p class="about__text__description">
-            Desarrolladora Frontend, profesora de química y futura ingeniera
-          </p>
-          <a href="#projects" class="btn">Lo que hago</a>
-        </article>
-        <img
-          src="./imagenes/undraw_programmer_re_owql.svg"
-          alt="mujer programando"
-        />
-      </section>
-      <!-- segunda sección "CONOCIMIENTOS"  "skills"-->
-      <section class="skills" id="skills">
-        <section class="skills__text">
-          <h2 class="skills__text__title">Mis conocimientos</h2>
-          <p class="skills__text__description">
-            Mis conocimientos como desarrolladora Frontend. 
-          </p>
-        </section>
-        <section class="skills__cards">
-          <figure class="skills__cards__item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            />
-            <figcaption>HTML 5</figcaption>
-          </figure>
-          <figure class="skills__cards__item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-            />
-            <figcaption>CSS 3</figcaption>
-          </figure>
-          <figure class="skills__cards__item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-            />
-            <figcaption>Sass</figcaption>
-          </figure>
-          <figure class="skills__cards__item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-            />
-            <figcaption>JavaScript</figcaption>
-          </figure>
-          <figure class="skills__cards__item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            />
-            <figcaption>React</figcaption>
-          </figure>
-          <figure class="skills__cards__item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-            />
-            <figcaption>GIT</figcaption>
-          </figure>
-        </section>
-      </section>
-      <!-- tercera sección "quote"-->
-      <section class="quote" id="quote">
-            <i class="fa-solid fa-quote-right"></i>
-            <blockquote cite="https://www.exitoysuperacionpersonal.com/frases-de-ada-lovelace/">
-                <p> Aquellos que han aprendido a caminar en el umbral de los mundos desconocidos, por medio de lo que
-                    comúnmente se denomina por excelencia las ciencias exactas, pueden entonces con las hermosas alas
-                    blancas de la imaginación, esperar elevarse aún más en el mundo inexplorado.
-                </p>
-                <h4>Marie Curie</h4>
-            </blockquote>
-        </section>
-      <!-- cuarta sección "MIS PROYECTOS" "projects"-->
-      <section class="projects" id="projects">
-            <section class="project__text">
-                <h2>Mis proyectos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate
-                    expedita ipsa optio. Fuga, voluptate.</p>
-            </section>
-            <section class="project__cards">
-                <a class="project__cards__item" href="https://github.com/AnaCPetrasso/Portafolio-ADA">
-                    <figure>
-                        <img src="./imagenes/undraw_portfolio_re_qwm5.svg">
-                        <figcaption>Portfolio</figcaption>
-                    </figure>
-                </a>
-                <a class="project__cards__item" href="#">
-                    <figure>
-                        <img src="./imagenes/undraw_mobile_user_re_xta4.svg">
-                        <figcaption>Generador de memes</figcaption>
-                    </figure>
-                </a>
-                <a class="project__cards__item" href="#">
-                    <figure>
-                        <img src="./imagenes/undraw_old_day_-6-x25.svg">
-                        <figcaption>Match 3</figcaption>
-                    </figure>
-                </a>
-                <a class="project__cards__item" href="#">
-                    <figure>
-                        <img src="./imagenes/undraw_vault_re_s4my.svg">
-                        <figcaption>Controlador de gastos</figcaption>
-                    </figure>
-                </a>
-                <a class="project__cards__item" href="#">
-                    <figure>
-                        <img src="./imagenes/undraw_schedule_re_2vro.svg">
-                        <figcaption>Administrador de reuniones</figcaption>
-                    </figure>
-                </a>
-                <a class="project__cards__item" href="#">
-                    <figure>
-                        <img src="./imagenes/undraw_to_do_list_re_9nt7.svg">
-                        <figcaption>ToDo app</figcaption>
-                    </figure>
-                </a>
-                <a class="project__cards__item" href="#">
-                    <figure>
-                        <img src="./imagenes/undraw_movie_night_re_9umk.svg">
-                        <figcaption>Buscador de películas</figcaption>
-                    </figure>
-                </a>
-            </section>
-        </section>
-      <!-- quinta sección "CONTACTO" "contact" -->
-      <!-- <section class="section contact" id="contact">
-            <section class="contact_main-box">
-                <section class="contact-box">
-                    <h2>Contactame</h2>
-                    <p>Podes contactarme por cualquiera de mis redes sociales
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i>@caritopetra
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i
-                                    class="fa-brands fa-linkedin-in"></i>ana-carolina-petrasso
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/AnaCPetrasso"><i
-                                    class="fa-brands fa-github-alt"></i>@AnaCPetrasso
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:carolina15petrasso@gmail.com"><i
-                                    class="fa-solid fa-envelope"></i>carolina15petrasso@gmail.com
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="writeme-box">
-                    <h2 class="title">Escribime</h2>
-                    <form action="https://formsubmit.co/carolina15petrasso@gmail.com" method="POST" >
-                        <section class="form-name">
-                            <section class="name-column">
-                                <label for="nombre">Nombre*</label>
-                                <input type="text" name="nombre" placeholder="p.ej.: Ada" required>
-                            </section>
-                            <section class="name-column">
-                                <label for="apellido">Apellido*</label>
-                                <input type="text" name="apellido" placeholder="p.ej.: Lovelace" required>
-                            </section>
-                        </section>
-                        <label for="email">Email*</label>
-                        <input type="email" name="email" placeholder="p.ej.: ada.lovelace@gmail.com" required>
-                        <label for="mensaje">Mensaje*</label>
-                        <textarea name="mensaje" cols="50" rows="10" placeholder="Escriba un mensaje aqui"></textarea>
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>
-                </section>
-            </section>
-        </section> -->
-    </main>
-    <!--  footer -->
-    <!-- <footer>
-        <nav class="footer-nav-bar">
-            <ul>
-                <li class="nav-item"><a href="#about" class="nav-link">HOLA</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">PROYECTOS</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <ul class="footer-social">
-            <li><a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i class="fa-brands fa-linkedin-in"></i><a>
-            </li>
-            <li><a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt"></i></a></li>
-            <li><a href="mailto:carolina15petrasso@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-        </ul>
-        <p class="footer-tex">
-            Hecho con &#128151 por Caro Petrasso
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portafolio personal. Proyecto final del módulo 1 de desarrollo Frontend en AdaITW" />
+  <meta name="author" content="Ana Carolina Petrasso" />
+  <!-- lugar para link a otros documentos o hojas de estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- lugar para link a fonts y iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/8f1dad4900.js" crossorigin="anonymous"></script>
+  <title>Portafolio Petrasso</title>
+</head>
+
+<body>
+  <!--  header -->
+  <header>
+    <nav class="header__nav">
+      <ul class="header__nav__ul">
+        <li class="header__nav__ul__item"><a href="#about">HOLA</a></li>
+        <li class="header__nav__ul__item">
+          <a href="#skills">CONOCIMIENTOS</a>
+        </li>
+        <li class="header__nav__ul__item">
+          <a href="#projects">PROYECTOS</a>
+        </li>
+        <li class="header__nav__ul__item--btn">
+          <a href="#contact" class="btn">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- primera sección "HOLA" "about"-->
+    <section class="about" id="about">
+      <article class="about__text">
+        <h3 class="about__text__greeting">¡Hola! Soy</h3>
+        <h1 class="about__text__name">Ana Carolina Petrasso</h1>
+        <p class="about__text__description">
+          Desarrolladora Frontend, profesora de química y futura ingeniera
         </p>
-    </footer> -->
-  </body>
+        <a href="#projects" class="btn">Lo que hago</a>
+      </article>
+      <img src="./imagenes/undraw_programmer_re_owql.svg" alt="mujer programando" />
+    </section>
+    <!-- segunda sección "CONOCIMIENTOS"  "skills"-->
+    <section class="skills" id="skills">
+      <section class="skills__text">
+        <h2 class="skills__text__title">Mis conocimientos</h2>
+        <p class="skills__text__description">
+          Mis conocimientos como desarrolladora Frontend.
+        </p>
+      </section>
+      <section class="skills__cards">
+        <figure class="skills__cards__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          <figcaption>HTML 5</figcaption>
+        </figure>
+        <figure class="skills__cards__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+          <figcaption>CSS 3</figcaption>
+        </figure>
+        <figure class="skills__cards__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+          <figcaption>Sass</figcaption>
+        </figure>
+        <figure class="skills__cards__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+          <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure class="skills__cards__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          <figcaption>React</figcaption>
+        </figure>
+        <figure class="skills__cards__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          <figcaption>GIT</figcaption>
+        </figure>
+      </section>
+    </section>
+    <!-- tercera sección "quote"-->
+    <section class="quote" id="quote">
+      <i class="fa-solid fa-quote-right"></i>
+      <blockquote cite="https://www.exitoysuperacionpersonal.com/frases-de-ada-lovelace/">
+        <p>
+          Aquellos que han aprendido a caminar en el umbral de los mundos
+          desconocidos, por medio de lo que comúnmente se denomina por
+          excelencia las ciencias exactas, pueden entonces con las hermosas
+          alas blancas de la imaginación, esperar elevarse aún más en el mundo
+          inexplorado.
+        </p>
+        <h4>Marie Curie</h4>
+      </blockquote>
+    </section>
+    <!-- cuarta sección "MIS PROYECTOS" "projects"-->
+    <section class="projects" id="projects">
+      <section class="projects__text">
+        <h2>Mis proyectos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+          cupiditate expedita ipsa optio. Fuga, voluptate.
+        </p>
+      </section>
+      <section class="projects__cards">
+        <a class="projects__cards__item" href="https://github.com/AnaCPetrasso/Portafolio-ADA">
+          <figure>
+            <img src="./imagenes/undraw_portfolio_re_qwm5.svg" />
+            <figcaption>Portfolio</figcaption>
+          </figure>
+        </a>
+        <a class="projects__cards__item" href="#">
+          <figure>
+            <img src="./imagenes/undraw_mobile_user_re_xta4.svg" />
+            <figcaption>Generador de memes</figcaption>
+          </figure>
+        </a>
+        <a class="projects__cards__item" href="#">
+          <figure>
+            <img src="./imagenes/undraw_old_day_-6-x25.svg" />
+            <figcaption>Match 3</figcaption>
+          </figure>
+        </a>
+        <a class="projects__cards__item" href="#">
+          <figure>
+            <img src="./imagenes/undraw_vault_re_s4my.svg" />
+            <figcaption>Controlador de gastos</figcaption>
+          </figure>
+        </a>
+        <a class="projects__cards__item" href="#">
+          <figure>
+            <img src="./imagenes/undraw_schedule_re_2vro.svg" />
+            <figcaption>Administrador de reuniones</figcaption>
+          </figure>
+        </a>
+        <a class="projects__cards__item" href="#">
+          <figure>
+            <img src="./imagenes/undraw_to_do_list_re_9nt7.svg" />
+            <figcaption>ToDo app</figcaption>
+          </figure>
+        </a>
+        <a class="projects__cards__item" href="#">
+          <figure>
+            <img src="./imagenes/undraw_movie_night_re_9umk.svg" />
+            <figcaption>Buscador de películas</figcaption>
+          </figure>
+        </a>
+      </section>
+    </section>
+    <!-- quinta sección "CONTACTO" "contact" -->
+    <section class="contact" id="contact">
+      <section class="contact__card">
+        <section class="contact__card__links">
+          <h2>Contactame</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            expedita hic rerum tempora fuga facere libero asperiores, sed
+            incidunt fugiat, officia vel laudantium. Molestiae amet mollitia
+            iste deleniti eius suscipit.
+          </p>
+          <ul>
+            <li>
+              <a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i>@caritopetra
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i
+                  class="fa-brands fa-linkedin-in"></i>ana-carolina-petrasso
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt"></i>@AnaCPetrasso
+              </a>
+            </li>
+            <li>
+              <a href="mailto:carolina15petrasso@gmail.com"><i
+                  class="fa-solid fa-envelope"></i>carolina15petrasso@gmail.com
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="contact__card__form">
+          <h2 class="title">Escribime</h2>
+          <form action="https://formsubmit.co/carolina15petrasso@gmail.com" method="POST">
+            <section class="contact__card__form__name">
+              <section class="contact__card__form__name__colum">
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" placeholder="p.ej.: Ada" required />
+              </section>
+              <section class="contact__card__form__name__colum">
+                <label for="apellido">Apellido*</label>
+                <input type="text" name="apellido" placeholder="p.ej.: Lovelace" required />
+              </section>
+            </section>
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="p.ej.: ada.lovelace@gmail.com" required />
+            <label for="mensaje">Mensaje*</label>
+            <textarea name="mensaje" cols="50" rows="10" placeholder="Escriba un mensaje aqui"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </section>
+      </section>
+    </section>
+  </main>
+  <!--  footer -->
+  <footer>
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__ul__item"><a href="#about" class="nav-link">HOLA</a></li>
+        <li class="nav__ul__item"><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
+        <li class="nav__ul__item"><a href="#projects" class="nav-link">PROYECTOS</a></li>
+        <li class="nav__ul__item"><a href="#contact" class="nav-link">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <ul class="footer-social">
+      <li><a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i class="fa-brands fa-linkedin-in"></i><a>
+      </li>
+      <li><a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt"></i></a></li>
+      <li><a href="mailto:carolina15petrasso@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+    <p class="footer-tex">
+      Hecho con &#128151 por Caro Petrasso
+    </p>
+  </footer>
+</body>
+
 </html>

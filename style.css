@@ -169,7 +169,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem;
+  margin: 10px;
 }
 
 .skills__cards__item:hover {
@@ -221,75 +221,76 @@ blockquote > h4 {
 
 /* cuarta sección "MIS PROYECTOS" "projects" */
 .projects {
+  background-color: #ffffff;
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  padding: 50px 0px;
-  background-color: #ffffff;
 }
 
-.project__text {
-  width: 50%;
+.projects__text {
   height: 20vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.project__text p {
-  width: 50%;
-}
-
-.project__cards {
-  width: 60%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.project-cards a {
-  width: 30%;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-  margin: 15px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
-
-.project-cards a:hover {
-  border: 1px solid #b99095;
-}
-
-.project-cards img {
-  width: 15rem;
-  height: 18rem;
-  display: block;
-}
-
-.project-cards figcaption {
+.projects__text p {
+  margin-top: 30px;
+  width: 50%;
   text-align: center;
-  padding: 5px 15px 25px;
+}
+
+.projects__cards {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  max-width: 1100px;
+  padding: 0px 50px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projects__cards__item {
+  background-color: #ffffff;
+  width: calc((100% / 3) - 1rem);
+  height: 300px;
+  border: 1px solid #b99095;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 5px;
+}
+.projects__cards__item figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.projects__cards__item img {
+  width: 100%;
+  height: 80%;
+}
+.projects__cards__item figcaption {
   font-size: 1rem;
   font-weight: 600;
+  text-align: center;
 }
 
-/* quinta sección "CONTACTO" "contact" */
-.section.contact {
+/* quinta sección "CONTACTO" "contact" -----------*/
+
+.contact {
   background-color: #f6f7fb;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact_main-box {
-  height: fit-content;
-  width: 55vw;
+.contact__card {
+  max-width: 1100px;
+  height: 75%;
+  margin: 0px 20px;
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 25px;
@@ -298,20 +299,19 @@ blockquote > h4 {
   align-items: baseline;
 }
 
-.contact-box {
+.contact__card__links{
   width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-top: 5%;
+  justify-content: center;
+  
 }
-
-.contact_main-box p {
+.contact__card p {
   padding: 40px 5px 50px;
 }
 
-.contact-box a {
+.contact__card  a {
   font-size: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -319,32 +319,29 @@ blockquote > h4 {
   padding: 15px 0px;
 }
 
-.contact-box i {
+.contact__card  i {
   font-size: 1.5rem;
   padding-right: 20px;
   color: #b99095;
 }
 
-.writeme-box {
+.contact__card__form {
   width: 40%;
-  margin-top: 5%;
-}
+  height: fit-content;
+} 
 
 form {
   margin: 40px 0px 20px;
 }
 
-.form-name {
+.contact__card__form__name {
+  height: 90px;
   display: flex;
-  justify-content: space-between;
 }
-
-.name-column {
-  width: 50%;
+.contact__card__form__name__colum{
+  height: fit-content;
 }
-
 label[for] {
-  display: block;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 5px;
@@ -374,19 +371,9 @@ textarea {
   border-radius: 20px;
   background-color: #f6f7fb;
   padding: 15px;
-  margin-top: 10px;
-}
-
-/* button[type="submit"] {
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    font-weight: 500;
-    padding: 15px 45px;
-    background-color: #B99095;
-    border: 1px solid #B99095;
-    border-radius: 50px;
-    margin-top: 15px;
-}  */
+  margin-top: 10px; 
+  margin-bottom: 10px;
+} 
 
 /* FOOTER */
 footer {
@@ -398,26 +385,24 @@ footer {
   align-items: center;
 }
 
-.footer-nav-bar {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
+.nav {
+  width: 600px;
   margin-bottom: 2rem;
 }
 
-.footer-nav-bar ul {
+.nav__ul{
   font-size: 0.9rem;
   font-weight: 400;
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.footer-nav-bar a {
+.nav a {
   color: #ffffff;
 }
 
-.footer-nav-bar a:hover {
+.nav a:hover {
   color: #ffffff;
 }
 
@@ -481,4 +466,20 @@ footer {
     height: 80%;
   }
   /* cuarta sección "projects"----------------- */
+}
+
+@media (max-width: 920px) {
+  /* segunda seccion "skills" */
+  .skills {
+    height: auto;
+    padding: 100px 20px 60px;
+  }
+  .skills__text {
+    margin: 20px 0px;
+  }
+  .skills__cards {
+    max-width: 800px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
 }
