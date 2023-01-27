@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f6f7fb;
@@ -52,14 +53,17 @@ header {
 .header__nav__ul {
   display: flex;
 }
+
 .header__nav__ul__item a {
   font-size: 1rem;
   font-weight: 400;
   margin: 0px 20px;
 }
+
 .header__nav__ul__item a:hover {
   color: #b99095;
 }
+
 /* ------------------------------------------------------ */
 /* para boton de "contacto" "lo que hago" y "submmit" */
 .btn {
@@ -70,10 +74,12 @@ header {
   border-radius: 20px;
   color: #ffffff;
 }
+
 .btn:hover {
   border: 1px solid #cea3a8;
   background-color: #cea3a8;
 }
+
 /* ------------------------------------------------------- */
 /* MAIN ---------------------------------------------------*/
 section {
@@ -120,12 +126,14 @@ section {
 .about__text__description {
   margin-bottom: 15px;
 }
+
 .about article a {
   width: 200px;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
 }
+
 /* segunda sección "CONOCIMIENTOS"  "skills"----------*/
 .skills {
   display: flex;
@@ -143,9 +151,11 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+
 .skills__text__title {
   text-align: center;
 }
+
 .skills__text__description {
   width: 50%;
   text-align: center;
@@ -159,6 +169,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .skills__cards__item {
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
@@ -175,6 +186,7 @@ section {
 .skills__cards__item:hover {
   border: 1px solid #b5e5cf;
 }
+
 .skills__cards__item img {
   width: 5rem;
 }
@@ -197,6 +209,7 @@ section {
   background-size: 100vw;
   background-position-y: bottom;
 }
+
 .quote i {
   font-size: 10rem;
   color: #fcb5ac;
@@ -208,12 +221,12 @@ blockquote {
   margin: 15px;
 }
 
-blockquote > p {
+blockquote>p {
   font-size: 1.3rem;
   margin-bottom: 15px;
 }
 
-blockquote > h4 {
+blockquote>h4 {
   font-size: 2rem;
   font-weight: 800;
   color: #000;
@@ -236,6 +249,7 @@ blockquote > h4 {
   align-items: center;
   margin-top: 50px;
 }
+
 .projects__text p {
   margin-top: 30px;
   width: 50%;
@@ -252,6 +266,7 @@ blockquote > h4 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .projects__cards__item {
   background-color: #ffffff;
   width: calc((100% / 3) - 1rem);
@@ -261,6 +276,7 @@ blockquote > h4 {
   padding: 20px;
   margin: 10px 5px;
 }
+
 .projects__cards__item figure {
   width: 100%;
   height: 100%;
@@ -268,10 +284,12 @@ blockquote > h4 {
   flex-direction: column;
   justify-content: space-around;
 }
+
 .projects__cards__item img {
   width: 100%;
   height: 80%;
 }
+
 .projects__cards__item figcaption {
   font-size: 1rem;
   font-weight: 600;
@@ -280,17 +298,17 @@ blockquote > h4 {
 
 /* quinta sección "CONTACTO" "contact" -----------*/
 
-.contact {
+/* .contact {
   background-color: #f6f7fb;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.contact__card {
+.contact {
   max-width: 1100px;
-  height: 75%;
-  margin: 0px 20px;
+  height: fit-content;
+  margin: 150px auto;
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 25px;
@@ -299,19 +317,22 @@ blockquote > h4 {
   align-items: baseline;
 }
 
-.contact__card__links{
+.contact__card {
   width: 40%;
-  height: 100%;
+  margin-top: 50px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  align-items: baseline;
+
 }
+
 .contact__card p {
   padding: 40px 5px 50px;
 }
 
-.contact__card  a {
+.contact__card a {
   font-size: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -319,16 +340,11 @@ blockquote > h4 {
   padding: 15px 0px;
 }
 
-.contact__card  i {
+.contact__card i {
   font-size: 1.5rem;
   padding-right: 20px;
   color: #b99095;
 }
-
-.contact__card__form {
-  width: 40%;
-  height: fit-content;
-} 
 
 form {
   margin: 40px 0px 20px;
@@ -338,9 +354,11 @@ form {
   height: 90px;
   display: flex;
 }
-.contact__card__form__name__colum{
+
+.contact__card__form__name__colum {
   height: fit-content;
 }
+
 label[for] {
   font-size: 1rem;
   font-weight: 600;
@@ -371,9 +389,9 @@ textarea {
   border-radius: 20px;
   background-color: #f6f7fb;
   padding: 15px;
-  margin-top: 10px; 
+  margin-top: 10px;
   margin-bottom: 10px;
-} 
+}
 
 /* FOOTER */
 footer {
@@ -390,7 +408,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-.nav__ul{
+.nav__ul {
   font-size: 0.9rem;
   font-weight: 400;
   width: 100%;
@@ -429,31 +447,38 @@ footer {
   color: #ffffff;
   background-color: #b99095;
 }
+
 /* MEDIA QUERIES */
 /* for desktop */
 @media (max-width: 1100px) {
+
   /* HEADER -------------------------------------*/
   header {
     display: none;
   }
+
   /* MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
   /* primera sección "about" --------------------*/
   .about {
     flex-direction: column;
     justify-content: space-around;
   }
+
   .about__text {
     width: 50%;
     margin: 150px 0px 30px;
     align-items: center;
   }
+
   article[class="about__text"] {
     text-align: center;
   }
+
   .about img {
     margin: auto;
     width: 350px;
   }
+
   .about__text__name {
     font-size: 3rem;
   }
@@ -467,10 +492,11 @@ footer {
   .quote {
     height: 80%;
   }
-  /* cuarta sección "projects"----------------- */
+
 }
 
 @media (max-width: 920px) {
+
   /* segunda seccion "skills" */
   .skills {
     height: auto;
@@ -490,17 +516,46 @@ footer {
 }
 
 @media(max-width:900px) {
+
   /* cuarta seccion "projects"------------- */
-  .projects__cards{
+  .projects__cards {
     max-width: 850px;
     margin-bottom: 50px;
     margin-top: 20px;
     padding: 0px 30px;
   }
-  .projects__cards__item{
+
+  .projects__cards__item {
     width: calc(50% - 15px);
     height: 300px;
   }
+
+  /* quinta seccion "contact */
+  .contact {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0px;
+    margin: none;
+    flex-direction: column;
+  }
+  .contact__card{
+    width: 100%;
+    margin: 50px 30px 10px;
+  }
+  .contact__card p{
+    width: 50%;
+  }
+  .contact__card__ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contact__card__ul__links{
+    flex-basis: 50%;
+  }
+  
 }
 
 @media(max-width:580px) {
@@ -534,16 +589,19 @@ footer {
   blockquote h4 {
     font-size: 1.5rem;
   }
+
   /* cuarta seccion "projects" */
-  .projects__text p{
+  .projects__text p {
     width: 100%;
   }
-  .projects__cards{
+
+  .projects__cards {
     max-width: 520px;
     margin-bottom: 50px;
     margin-top: 20px;
   }
-  .projects__cards__item{
+
+  .projects__cards__item {
     width: 100%;
   }
 
@@ -607,8 +665,9 @@ footer {
   .skills__cards__item img {
     width: 25%;
   }
+
   /* cuarta seccion "projects---------------- */
-  .projects__cards__item{
-   height: 200px;
+  .projects__cards__item {
+    height: 200px;
   }
 }
