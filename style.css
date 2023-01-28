@@ -226,7 +226,7 @@ blockquote>p {
   margin-bottom: 15px;
 }
 
-blockquote>h4 {
+blockquote>h3 {
   font-size: 2rem;
   font-weight: 800;
   color: #000;
@@ -373,6 +373,7 @@ input[type] {
   border-radius: 20px;
   background-color: #f6f7fb;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 input[name="nombre"] {
@@ -381,6 +382,7 @@ input[name="nombre"] {
 
 input[type="text"] {
   width: 90%;
+  margin-top: 10px;
 }
 
 textarea {
@@ -547,13 +549,16 @@ footer {
     width: 50%;
   }
   .contact__card__ul{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   .contact__card__ul__links{
     flex-basis: 50%;
+  }
+  .contact__card__ul__links a{
+    width: fit-content;
   }
   
 }
@@ -586,10 +591,16 @@ footer {
     font-size: 2rem;
   }
 
-  blockquote h4 {
+  blockquote h3 {
     font-size: 1.5rem;
   }
-
+   /* tercera sección "quote"---------------------- */
+   .quote i{
+    font-size: 4rem;
+  }
+  blockquote p{
+    font-size: 1rem;
+  }
   /* cuarta seccion "projects" */
   .projects__text p {
     width: 100%;
@@ -609,9 +620,13 @@ footer {
 
 @media(max-width:500px) {
 
-  /* tercera seccion "quote"-------------------*/
-  .quote__box p {
-    font-size: 1rem;
+  
+  /* tercera  sección "quote"---------------------- */
+  .quote i{
+    font-size: 4rem;
+  }
+  blockquote p{
+    font-size: 0.8rem;
   }
 }
 
@@ -621,9 +636,15 @@ footer {
   h2 {
     font-size: 1.5rem;
   }
-
-  blockquote h4 {
+  /* cuarta sección "quote"---------------------- */
+  .quote i{
+    font-size: 3rem;
+  }
+  blockquote h3 {
     font-size: 1.2rem;
+  }
+  blockquote p{
+    font-size: 0.5rem;
   }
 
   /* primera seccion "about"---------------- */
