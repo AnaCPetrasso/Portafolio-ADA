@@ -14,7 +14,7 @@ a {
   color: black;
 }
 
-h2 {
+h3 {
   font-size: 3rem;
   font-weight: 900;
 }
@@ -26,8 +26,27 @@ p {
 ul {
   list-style: none;
 }
+/*------ BTN ----------------------------- */
+.btn {
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: 1px solid #b99095;
+  background-color: #b99095;
+  border-radius: 20px;
+  color: #ffffff;
+}
+/* ---------------------------------------- */
+.btn:active {
+  border: 1px solid #b99095;
+  box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
+}
 
-/* HEADER ----------------------------------------------------*/
+.btn:hover {
+  border: 1px solid #cea3a8;
+  background-color: #cea3a8;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 header {
   width: 100vw;
   height: 9vh;
@@ -52,6 +71,17 @@ header {
 
 .header__nav__ul {
   display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.header__nav__ul__item {
+  padding: 5px 10px;
+  border: 1px solid none;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 0px 10px;
 }
 
 .header__nav__ul__item a {
@@ -60,33 +90,21 @@ header {
   margin: 0px 20px;
 }
 
+.header__nav__ul__item:active {
+  border: 1px solid #b99095;
+  box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
+}
+
 .header__nav__ul__item a:hover {
   color: #b99095;
 }
 
-/* ------------------------------------------------------ */
-/* para boton de "contacto" "lo que hago" y "submmit" */
-.btn {
-  font-size: 1rem;
-  padding: 10px 25px;
-  border: 1px solid #b99095;
-  background-color: #b99095;
-  border-radius: 20px;
-  color: #ffffff;
-}
-
-.btn:hover {
-  border: 1px solid #cea3a8;
-  background-color: #cea3a8;
-}
-
-/* ------------------------------------------------------- */
-/* MAIN ---------------------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 section {
   height: 100vh;
 }
 
-/* primera sección "HOLA" "about" --------------------------*/
+/*________________________________ ABOUT__________________________*/
 .about {
   display: flex;
   justify-content: center;
@@ -134,7 +152,7 @@ section {
   text-align: center;
 }
 
-/* segunda sección "CONOCIMIENTOS"  "skills"----------*/
+/*________________________________ SKILLS __________________________*/
 .skills {
   display: flex;
   flex-direction: column;
@@ -197,7 +215,7 @@ section {
   margin: 1rem;
 }
 
-/* tercera sección "quote" --------------------------*/
+/*_________________________________ QUOTE __________________________*/
 .quote {
   background: #ffffff;
   display: flex;
@@ -226,13 +244,13 @@ blockquote>p {
   margin-bottom: 15px;
 }
 
-blockquote>h3 {
+blockquote p + p {
   font-size: 2rem;
   font-weight: 800;
   color: #000;
 }
 
-/* cuarta sección "MIS PROYECTOS" "projects" */
+/*______________________________ PROJECTS __________________________*/
 .projects {
   background-color: #ffffff;
   height: auto;
@@ -277,6 +295,11 @@ blockquote>h3 {
   margin: 10px 5px;
 }
 
+.projects__cards__item:active {
+  border: 1px solid #b99095;
+  box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
+}
+
 .projects__cards__item figure {
   width: 100%;
   height: 100%;
@@ -296,15 +319,7 @@ blockquote>h3 {
   text-align: center;
 }
 
-/* quinta sección "CONTACTO" "contact" -----------*/
-
-/* .contact {
-  background-color: #f6f7fb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
+/*____________________________________ CONTACT __________________________*/
 .contact {
   max-width: 1100px;
   height: fit-content;
@@ -332,17 +347,32 @@ blockquote>h3 {
   padding: 40px 5px 50px;
 }
 
-.contact__card a {
-  font-size: 1rem;
+.contact__card__ul__link {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: 15px 0px;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid none;
+  border-radius: 30px;
+  margin-top: 10px;
+  width: fit-content;
 }
 
-.contact__card i {
-  font-size: 1.5rem;
-  padding-right: 20px;
+.contact__card__ul__link:active {
+  border: 1px solid #b99095;
+  box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
+}
+
+.contact__card__ul__link i {
+  font-size: 1.2rem;
+  margin-right: 20px;
+  padding: 8px;
+  color: #b99095;
+  border: 1px solid none;
+  border-radius: 100%;
+}
+
+.contact__card__ul__link :hover {
   color: #b99095;
 }
 
@@ -394,8 +424,16 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+input:focus{
+  outline: none;
+  box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
+}
+textarea:focus{
+  outline: none;
+  box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
+}
 
-/* FOOTER */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 footer {
   height: 30vh;
   background-color: #b99095;
@@ -405,33 +443,35 @@ footer {
   align-items: center;
 }
 
-.nav {
-  width: 600px;
+.footer__nav {
+  width: 100%;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-.nav__ul {
+.footer__nav__ul {
   font-size: 0.9rem;
   font-weight: 400;
-  width: 100%;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.nav a {
+.footer__nav a {
   color: #ffffff;
 }
 
-.nav a:hover {
+.footer__nav a:hover {
   color: #ffffff;
 }
 
-.footer-social {
+.footer__ul__social {
   display: flex;
   margin-bottom: 2rem;
 }
 
-.footer-social i {
+.footer__ul__social i {
   font-size: 1.2rem;
   color: #b99095;
   background-color: #ffffff;
@@ -441,26 +481,23 @@ footer {
   margin: 10px;
 }
 
-.footer-tex {
+.footer__text {
   color: #ffffff;
 }
 
-.footer-social i:hover {
+.footer__ul__social i:hover {
   color: #ffffff;
   background-color: #b99095;
 }
 
-/* MEDIA QUERIES */
-/* for desktop */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media (max-width: 1100px) {
-
-  /* HEADER -------------------------------------*/
+  /*~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   header {
     display: none;
   }
-
-  /* MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  /* primera sección "about" --------------------*/
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ ABOUT _________________________*/
   .about {
     flex-direction: column;
     justify-content: space-around;
@@ -485,12 +522,12 @@ footer {
     font-size: 3rem;
   }
 
-  /* segunda sección "skills-"------------------*/
+  /*______________ SKILLS _________________________*/
   .skills__text {
     width: 100%;
   }
 
-  /* tercera sección "quote"--------------------*/
+  /*______________ QUOTE _________________________*/
   .quote {
     height: 80%;
   }
@@ -498,8 +535,8 @@ footer {
 }
 
 @media (max-width: 920px) {
-
-  /* segunda seccion "skills" */
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ SKILLS _________________________*/
   .skills {
     height: auto;
     padding: 100px 20px 60px;
@@ -518,8 +555,8 @@ footer {
 }
 
 @media(max-width:900px) {
-
-  /* cuarta seccion "projects"------------- */
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ PROJECTS _______________________*/
   .projects__cards {
     max-width: 850px;
     margin-bottom: 50px;
@@ -532,40 +569,42 @@ footer {
     height: 300px;
   }
 
-  /* quinta seccion "contact */
+  /*______________ CONTACT _________________________*/
   .contact {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     border: none;
     border-radius: 0px;
-    margin: none;
     flex-direction: column;
   }
-  .contact__card{
-    width: 100%;
-    margin: 50px 30px 10px;
-  }
-  .contact__card p{
-    width: 50%;
-  }
-  .contact__card__ul{
+
+  .contact__card {
     width: 90%;
+    margin: 20px 30px 10px;
+  }
+
+  .contact__card__ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
-  .contact__card__ul__links{
+
+  .contact__card__ul__link {
     flex-basis: 50%;
   }
-  .contact__card__ul__links a{
-    width: fit-content;
+
+}
+
+@media (max-width: 700px) {
+  /*~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .footer__nav__ul {
+    display: none;
   }
-  
 }
 
 @media(max-width:580px) {
-
-  /* segunda seccion "skills"---------------- */
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ SKILLS _______________________*/
+  
   .skills__cards {
     max-width: 580px;
     margin-bottom: 50px;
@@ -584,24 +623,32 @@ footer {
   .skills__cards__item figcaption {
     font-size: 1rem;
   }
+
 }
 
 @media (max-width: 550px) {
-  h2 {
+  h3 {
     font-size: 2rem;
   }
 
-  blockquote h3 {
+  blockquote p + p {
     font-size: 1.5rem;
   }
-   /* tercera sección "quote"---------------------- */
-   .quote i{
+
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ QUOTE _______________________*/
+  blockquote {
+    width: 100%;
+  }
+
+  .quote i {
     font-size: 4rem;
   }
-  blockquote p{
+
+  blockquote p {
     font-size: 1rem;
   }
-  /* cuarta seccion "projects" */
+  /*______________ PROJECTS _______________________*/
   .projects__text p {
     width: 100%;
   }
@@ -619,35 +666,19 @@ footer {
 }
 
 @media(max-width:500px) {
-
-  
-  /* tercera  sección "quote"---------------------- */
-  .quote i{
-    font-size: 4rem;
-  }
-  blockquote p{
-    font-size: 0.8rem;
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ CONTACT _______________________*/
+  .contact__card__ul__link {
+    flex-basis: 100%;
   }
 }
 
 @media(max-width:350px) {
-
-  /* --------------------------------------------*/
-  h2 {
+  h3 {
     font-size: 1.5rem;
   }
-  /* cuarta sección "quote"---------------------- */
-  .quote i{
-    font-size: 3rem;
-  }
-  blockquote h3 {
-    font-size: 1.2rem;
-  }
-  blockquote p{
-    font-size: 0.5rem;
-  }
-
-  /* primera seccion "about"---------------- */
+  /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ ABOUT _______________________*/
   .about img {
     width: 100%;
     margin: 10px 40px 10px;
@@ -671,7 +702,7 @@ footer {
     font-size: 1rem;
   }
 
-  /* segunda seccion "skills"---------------- */
+  /*______________ SKILLS _______________________*/
   .skills__cards {
     max-width: 350px;
     margin-bottom: 50px;
@@ -686,9 +717,17 @@ footer {
   .skills__cards__item img {
     width: 25%;
   }
-
-  /* cuarta seccion "projects---------------- */
+  /*______________ QUOTE _______________________*/
+  .quote i {
+    font-size: 3rem;
+  }
+  /*______________ PROJECTS _______________________*/
   .projects__cards__item {
     height: 200px;
+  }
+
+  /*______________ CONTACT _______________________*/
+  .contact__card__ul__link a {
+    font-size: 0.8rem;
   }
 }
