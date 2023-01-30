@@ -1,4 +1,4 @@
-![BANNER](https://user-images.githubusercontent.com/116232147/215378358-acef1d74-c7cd-4d73-8fb9-2b144dadf005.png)
+![BANNER](https://user-images.githubusercontent.com/116232147/215499863-f4d08071-b4cf-4dc1-bcce-b383ca7040bf.png)
 # Portafolio Ana Carolina Petrasso
 
 Este es mi portafolio personal creado para presentar como profecto final del **Módulo 1 - HTML y CSS** para el curso de desarrollo frontend de ADA.
@@ -15,6 +15,7 @@ Este es mi portafolio personal creado para presentar como profecto final del **M
 ---  
 ## Sobre la pagina 🖥️
 ### Estructura 
+
 El diseño de la landing page se baso en el modelo pedido por la catedra que podes ver [aqui](https://frontend-proyecto-portfolio.adaitw.org/). El mismo consta de 4 secciones importantes: 
 1. ABOUT: Donde se encuentra un breve deescripcion sobre mi. 
 2. SKILLS: Donde figuran los conocimientos adquiridos y por adquirir en el curso 
