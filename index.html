@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Carolina Petrasso. Proyecto final del módulo 1 de desarrollo Frontend en AdaITW">
-  <meta name="keywords" content="HTML, CSS, Desarrollo Frontend, frontend developer, frontend, programacion, programacion para mujeres, portfolio, curso progrmacion frontend, ">
+  <meta name="description"
+    content="Portafolio de Carolina Petrasso. Proyecto final del módulo 1 de desarrollo Frontend en AdaITW">
+  <meta name="keywords"
+    content="HTML, CSS, Desarrollo Frontend, frontend developer, frontend, programacion, programacion para mujeres, portfolio, curso progrmacion frontend, ">
   <meta name="author" content="Ana Carolina Petrasso">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/8f1dad4900.js" crossorigin="anonymous"></script>
   <title>Portafolio Petrasso</title>
 </head>
+
 <body>
   <header>
     <nav class="header__nav">
@@ -29,9 +33,9 @@
     </nav>
   </header>
   <main>
-    <!-- <h1>Portafolio-ADA</h1> -->
+    <h1>Portafolio-ADA</h1>
     <section class="about" id="about">
-      <!-- <h2>ABOUT</h2> -->
+      <h2>ABOUT</h2>
       <article class="about__text">
         <p class="about__text__greeting">¡Hola! Soy</p>
         <h3 class="about__text__name">Ana Carolina Petrasso</h3>
@@ -42,7 +46,7 @@
       </article>
       <img src="./imagenes/undraw_programmer_re_owql.svg" alt="mujer programando">
     </section>
-    <!-- <h2>"SKILLS</h2> -->
+    <h2>"SKILLS</h2>
     <section class="skills" id="skills">
       <section class="skills__text">
         <h3 class="skills__text__title">Mis conocimientos</h3>
@@ -51,34 +55,52 @@
         </p>
       </section>
       <section class="skills__cards">
-        <figure class="skills__cards__item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML">
-          <figcaption>HTML 5</figcaption>
-        </figure>
-        <figure class="skills__cards__item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="Logo CSS">
-          <figcaption>CSS 3</figcaption>
-        </figure>
-        <figure class="skills__cards__item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Logo Sass">
-          <figcaption>Sass</figcaption>
-        </figure>
-        <figure class="skills__cards__item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Logo JavaScript">
-          <figcaption>JavaScript</figcaption>
-        </figure>
-        <figure class="skills__cards__item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Logo React">
-          <figcaption>React</figcaption>
-        </figure>
-        <figure class="skills__cards__item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo GIT">
-          <figcaption>GIT</figcaption>
-        </figure>
+        <div class="skills__cards__item">
+          <img class="skills__cards__item__img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML">
+          <div class="skills__cards__item__overlay">
+            <p class="skills__cards__item__description">HTML 5</p>
+          </div>
+        </div>
+        <div class="skills__cards__item">
+          <img class="skills__cards__item__img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="Logo HTML">
+          <div class="skills__cards__item__overlay">
+            <p class="skills__cards__item__description">CSS 3</p>
+          </div>
+        </div>
+        <div class="skills__cards__item">
+          <img class="skills__cards__item__img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Logo HTML">
+          <div class="skills__cards__item__overlay">
+            <p class="skills__cards__item__description">Sass</p>
+          </div>
+        </div>
+        <div class="skills__cards__item">
+          <img class="skills__cards__item__img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Logo HTML">
+          <div class="skills__cards__item__overlay">
+            <p class="skills__cards__item__description">JavaScript</p>
+          </div>
+        </div>
+        <div class="skills__cards__item">
+          <img class="skills__cards__item__img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Logo HTML">
+          <div class="skills__cards__item__overlay">
+            <p class="skills__cards__item__description">React</p>
+          </div>
+        </div>
+        <div class="skills__cards__item">
+          <img class="skills__cards__item__img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo HTML">
+          <div class="skills__cards__item__overlay">
+            <p class="skills__cards__item__description">Git</p>
+          </div>
+        </div>
       </section>
     </section>
     <section class="quote" id="quote">
-      <!-- <h2>QUOTE</h2> -->
+      <h2>QUOTE</h2>   
       <i class="fa-solid fa-quote-right"></i>
       <blockquote cite="https://www.exitoysuperacionpersonal.com/frases-de-ada-lovelace/">
         <p>
@@ -91,8 +113,8 @@
         <p>Marie Curie</p>
       </blockquote>
     </section>
-    <!-- cuarta sección "MIS PROYECTOS" "projects"-->
     <section class="projects" id="projects">
+      <h2>PROJECTS</h2>
       <section class="projects__text">
         <h3>Mis proyectos</h3>
         <p>
@@ -101,7 +123,6 @@
         </p>
       </section>
       <section class="projects__cards">
-        <!-- <h2>PROJECTS</h2> -->
         <a class="projects__cards__item" href="https://anacpetrasso.github.io/Portafolio-ADA/">
           <figure>
             <img src="./imagenes/undraw_portfolio_re_qwm5.svg" alt="Portafolio">
@@ -147,7 +168,7 @@
       </section>
     </section>
     <section class="contact" id="contact">
-      <!-- <h2>CONTACT</h2> -->
+      <h2>CONTACT</h2>
       <section class="contact__card">
         <h3>Contactame</h3>
         <p>
@@ -216,4 +237,5 @@
     </p>
   </footer>
 </body>
+
 </html>
