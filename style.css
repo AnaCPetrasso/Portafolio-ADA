@@ -31,6 +31,22 @@ p {
 ul {
   list-style: none;
 }
+@keyframes disapear {
+
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
 
 /*------ BTN ----------------------------- */
 .btn {
@@ -266,8 +282,7 @@ section {
   background-size: 100vw;
   background-position-y: bottom;
 }
-
-.quote i {
+.fa-solid.fa-quote-right{
   font-size: 10rem;
   color: #fcb5ac;
 }
@@ -290,34 +305,6 @@ blockquote p+p {
 }
 
 /*______________________________ PROJECTS __________________________*/
-@keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #B99095 50%, #FCB5AC 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-}
-
-.bg3 {
-  animation-duration:5s;
-}
 .projects {
   background-color: #ffffff;
   height: auto;
@@ -510,24 +497,7 @@ textarea:focus {
   box-shadow: 0px 0px 19px -1px rgba(185, 144, 149, 1);
 }
 
-/* ------------------------------------------------------------------------------------ */
-
-@keyframes disapear {
-
-  0% {
-    opacity: 1;
-  }
-
-  25% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 0;
-  }
-
-}
+/* ----------FORM SUBMIT BUTTON----------- */
 
 button:focus {
   animation: disapear;
@@ -619,7 +589,7 @@ footer {
 
   .about img {
     margin: auto;
-    width: 350px;
+    max-width: 300px;
   }
 
   .about__text__name {
@@ -713,7 +683,7 @@ footer {
   /*______________ SKILLS _______________________*/
 
   .skills__cards {
-    max-width: 580px;
+    width: 80%;
     margin-bottom: 50px;
     margin-top: 20px;
   }
@@ -726,11 +696,6 @@ footer {
   .skills__cards__item img {
     width: 30%;
   }
-
-  .skills__cards__item figcaption {
-    font-size: 1rem;
-  }
-
 }
 
 @media (max-width: 550px) {
@@ -743,6 +708,10 @@ footer {
   }
 
   /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*______________ SKILLS _______________________*/
+  .skills__cards__item__description{
+    font-size: 1.5rem;
+  }
   /*______________ QUOTE _______________________*/
   blockquote {
     width: 100%;
@@ -781,12 +750,18 @@ footer {
     flex-basis: 100%;
   }
 }
-
+@media(max-width:450px){
+  .skills__cards {
+    width: 90%;
+  }
+  .skills__cards__item__description{
+    font-size: 1rem;
+  }
+}
 @media(max-width:350px) {
   h3 {
     font-size: 1.5rem;
   }
-
   /*~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /*______________ ABOUT _______________________*/
   .about img {
