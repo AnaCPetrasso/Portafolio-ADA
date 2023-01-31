@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portafolio de Carolina Petrasso. Proyecto final del módulo 1 de desarrollo Frontend en AdaITW">
+    content="Portafolio de Ana Carolina Petrasso. Proyecto final del módulo 1 de desarrollo Frontend en AdaITW">
   <meta name="keywords"
-    content="HTML, CSS, Desarrollo Frontend, frontend developer, frontend, programacion, programacion para mujeres, portfolio, curso progrmacion frontend, ">
+    content="HTML, CSS, Desarrollo Frontend, frontend developer, frontend, programacion, portfolio, desarrolladora, JavaScript, Sass, React, Git">
   <meta name="author" content="Ana Carolina Petrasso">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -33,9 +33,9 @@
     </nav>
   </header>
   <main>
-    <h1>Portafolio-ADA</h1>
+    <h1 hidden>Portafolio-ADA</h1>
     <section class="about" id="about">
-      <h2>ABOUT</h2>
+      <h2 hidden>ABOUT</h2>
       <article class="about__text">
         <p class="about__text__greeting">¡Hola! Soy</p>
         <h3 class="about__text__name">Ana Carolina Petrasso</h3>
@@ -46,8 +46,8 @@
       </article>
       <img src="./imagenes/undraw_programmer_re_owql.svg" alt="mujer programando">
     </section>
-    <h2>"SKILLS</h2>
     <section class="skills" id="skills">
+      <h2 hidden>"SKILLS</h2>
       <section class="skills__text">
         <h3 class="skills__text__title">Mis conocimientos</h3>
         <p class="skills__text__description">
@@ -55,54 +55,62 @@
         </p>
       </section>
       <section class="skills__cards">
-        <div class="skills__cards__item">
+        <h3 hidden>skills cards</h3>
+        <figure class="skills__cards__item">
           <img class="skills__cards__item__img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML">
-          <div class="skills__cards__item__overlay">
-            <p class="skills__cards__item__description">HTML 5</p>
-          </div>
-        </div>
-        <div class="skills__cards__item">
+          <blockquote class="skills__cards__item__overlay">
+            <p class="skills__cards__item__text">HTML 5</p>
+            <p class="skills__cards__item__description">Es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.</p>
+          </blockquote>
+        </figure>
+        <figure class="skills__cards__item">
           <img class="skills__cards__item__img"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="Logo HTML">
-          <div class="skills__cards__item__overlay">
-            <p class="skills__cards__item__description">CSS 3</p>
-          </div>
-        </div>
-        <div class="skills__cards__item">
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="Logo CSS">
+          <blockquote class="skills__cards__item__overlay">
+            <p class="skills__cards__item__text">CSS</p>
+            <p class="skills__cards__item__description">Es un lenguaje que maneja el diseño y presentación de las páginas web.</p>
+          </blockquote>
+        </figure>
+        <figure class="skills__cards__item">
           <img class="skills__cards__item__img"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Logo HTML">
-          <div class="skills__cards__item__overlay">
-            <p class="skills__cards__item__description">Sass</p>
-          </div>
-        </div>
-        <div class="skills__cards__item">
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Logo Sass">
+          <blockquote class="skills__cards__item__overlay">
+            <p class="skills__cards__item__text">Sass</p>
+            <p class="skills__cards__item__description">Es un metalenguaje de Hojas de Estilo en Cascada (CSS). </p>
+          </blockquote>
+        </figure>
+        <figure class="skills__cards__item">
           <img class="skills__cards__item__img"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Logo HTML">
-          <div class="skills__cards__item__overlay">
-            <p class="skills__cards__item__description">JavaScript</p>
-          </div>
-        </div>
-        <div class="skills__cards__item">
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt="Logo Java Script">
+          <blockquote class="skills__cards__item__overlay">
+            <p class="skills__cards__item__text">JavaScript</p>
+            <p class="skills__cards__item__description">Es es un lenguaje de programación orientado a objetos,</p>
+          </blockquote>
+        </figure>
+        <figure class="skills__cards__item">
           <img class="skills__cards__item__img"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Logo HTML">
-          <div class="skills__cards__item__overlay">
-            <p class="skills__cards__item__description">React</p>
-          </div>
-        </div>
-        <div class="skills__cards__item">
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Logo React">
+          <blockquote class="skills__cards__item__overlay">
+            <p class="skills__cards__item__text">React</p>
+            <p class="skills__cards__item__description">Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario </p>
+          </blockquote>
+        </figure>
+        <figure class="skills__cards__item">
           <img class="skills__cards__item__img"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo HTML">
-          <div class="skills__cards__item__overlay">
-            <p class="skills__cards__item__description">Git</p>
-          </div>
-        </div>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo Git">
+          <blockquote class="skills__cards__item__overlay">
+            <p class="skills__cards__item__text">Git </p>
+            <p class="skills__cards__item__description">Es un software de control de versiones</p>
+          </blockquote>
+        </figure>
       </section>
     </section>
     <section class="quote" id="quote">
-      <h2>QUOTE</h2>  
-      <i class="fa-solid fa-quote-right"></i>
-      <blockquote cite="https://www.exitoysuperacionpersonal.com/frases-de-ada-lovelace/">
+      <h2 hidden>QUOTE</h2>
+      <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+      <blockquote class="blockquote" cite="https://www.exitoysuperacionpersonal.com/frases-de-ada-lovelace/">
         <p>
           Aquellos que han aprendido a caminar en el umbral de los mundos
           desconocidos, por medio de lo que comúnmente se denomina por
@@ -114,7 +122,7 @@
       </blockquote>
     </section>
     <section class="projects" id="projects">
-      <h2>PROJECTS</h2>
+      <h2 hidden>PROJECTS</h2>
       <section class="projects__text">
         <h3>Mis proyectos</h3>
         <p>
@@ -123,6 +131,7 @@
         </p>
       </section>
       <section class="projects__cards">
+        <h3 hidden>projects cards</h3>
         <a class="projects__cards__item" href="https://anacpetrasso.github.io/Portafolio-ADA/">
           <figure>
             <img src="./imagenes/undraw_portfolio_re_qwm5.svg" alt="Portafolio">
@@ -168,7 +177,7 @@
       </section>
     </section>
     <section class="contact" id="contact">
-      <h2>CONTACT</h2>
+      <h2 hidden>CONTACT</h2>
       <section class="contact__card">
         <h3>Contactame</h3>
         <p>
@@ -176,21 +185,23 @@
         </p>
         <ul class="contact__card__ul">
           <li class="contact__card__ul__link">
-            <a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i>@caritopetra
+            <a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"
+                aria-hidden="true"></i>@caritopetra
             </a>
           </li>
           <li class="contact__card__ul__link">
-            <a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i
-                class="fa-brands fa-linkedin-in"></i>ana-carolina-petrasso
+            <a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i class="fa-brands fa-linkedin-in"
+                aria-hidden="true"></i>ana-carolina-petrasso
             </a>
           </li>
           <li class="contact__card__ul__link">
-            <a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt"></i>@AnaCPetrasso
+            <a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt"
+                aria-hidden="true"></i>@AnaCPetrasso
             </a>
           </li>
           <li class="contact__card__ul__link">
-            <a href="mailto:carolina15petrasso@gmail.com"><i
-                class="fa-solid fa-envelope"></i>carolina15petrasso@gmail.com
+            <a href="mailto:carolina15petrasso@gmail.com"><i class="fa-solid fa-envelope"
+                aria-hidden="true"></i>carolina15petrasso@gmail.com
             </a>
           </li>
         </ul>
@@ -199,11 +210,14 @@
         <h3 class="title">Escribime</h3>
         <form action="https://formsubmit.co/carolina15petrasso@gmail.com" method="POST">
           <section class="contact__card__form__name">
+            <h4 hidden>Contact card</h4>
             <section class="contact__card__form__name__colum">
+              <h5 hidden>Contact card name</h5>
               <label for="nombre">Nombre*</label>
               <input type="text" name="nombre" placeholder="p.ej.: Ada" id="nombre" required>
             </section>
             <section class="contact__card__form__name__colum">
+              <h5 hidden>Contact card lastname</h5>
               <label for="apellido">Apellido*</label>
               <input type="text" name="apellido" placeholder="p.ej.: Lovelace" id="apellido" required>
             </section>
@@ -220,17 +234,18 @@
   <footer>
     <nav class="footer__nav">
       <ul class="footer__nav__ul">
-        <li><a href="#about" class="nav-link">HOLA</a></li>
-        <li><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
-        <li><a href="#projects" class="nav-link">PROYECTOS</a></li>
-        <li><a href="#contact" class="nav-link">CONTACTO</a></li>
+        <li><a href="#about">HOLA</a></li>
+        <li><a href="#skills">CONOCIMIENTOS</a></li>
+        <li><a href="#projects">PROYECTOS</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
       </ul>
     </nav>
     <ul class="footer__ul__social">
-      <li><a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt"></i></a></li>
-      <li><a href="mailto:carolina15petrasso@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="https://twitter.com/caritopetra"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/ana-carolina-petrasso/"><i class="fa-brands fa-linkedin-in"
+            aria-hidden="true"></i></a></li>
+      <li><a href="https://github.com/AnaCPetrasso"><i class="fa-brands fa-github-alt" aria-hidden="true"></i></a></li>
+      <li><a href="mailto:carolina15petrasso@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
     </ul>
     <p class="footer__text">
       Hecho con &#128151; por Caro Petrasso
