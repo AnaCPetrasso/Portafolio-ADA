@@ -9,7 +9,7 @@ Este es mi portafolio personal creado para presentar como profecto final del **M
     - [Estructura](#sstructura) 
     - [Paleta de colores](#paleta-de-colores)
     - [Fuente](#fuente)
-    - [Imágenes](#imagenes) 
+    - [Imágenes](#imágenes) 
     - [Screenshots](#screenshots)
 - [Sobre mi](#sobre-mi-👩‍💻) 
 ---  
