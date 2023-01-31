@@ -819,5 +819,15 @@ footer {
   /*______________ CONTACT _______________________*/
   .contact__card__ul__link a {
     font-size: 0.8rem;
+    
+  }
+}
+@media(max-height:750px){
+  /*______________ ABOUT _______________________*/
+  .about img{
+    max-height:600px  ;
+  }
+  .about__text{
+    margin-top: 20px ;
   }
 }
