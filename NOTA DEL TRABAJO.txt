@@ -1,0 +1,25 @@
+README:
+- Bien estructurado y buen uso del lenguaje
+- Buen detalle la explicación de la paleta de colores, ilustraciones e iconos.
+- Muy buenos los mockups.
+
+CSS: 
+- Un solo css por proyecto, el de comming soon debería estar dentro de style.css
+- Falta uso de variables, por ejemplo variable de color #b99095 que se repite mucho.
+- la clase btn tiene border: 1px solid #b99095; en normal y active.
+- border: 1px solid #b99095 se repite en varias oportunidades, podrías reutilizar;
+- border: 1px solid none; ¿Por qué el none?
+- Es super responsive, pero podrías usar más medidas relativas para disminuir la carga de media.
+- Muy buenas las transiciones y animaciones, son sutiles y funcionales.
+
+HTML:
+- Section skills: Las descripciones de los figure deben ser figcaption y no blockquote.
+- En el formulario podés agrupar las secciones con la etiqueta fieldset, en vez de section.
+
+IMG:
+- landingpage-1.png, landingpage-2.png, landingpage-3.png, landingpage-4.png Deberían ser .jpg
+
+GIT:
+- Excelente uso de commits
+
+Nota: 10
