@@ -1,4 +1,4 @@
-gi![BANNER](https://user-images.githubusercontent.com/116232147/215499863-f4d08071-b4cf-4dc1-bcce-b383ca7040bf.png)
+![BANNER](https://user-images.githubusercontent.com/116232147/215499863-f4d08071-b4cf-4dc1-bcce-b383ca7040bf.png)
 # Portafolio 
 
 Este es mi portafolio personal creado para presentar como profecto final del **Módulo 1 - HTML y CSS** para el curso de desarrollo frontend de ADA.
